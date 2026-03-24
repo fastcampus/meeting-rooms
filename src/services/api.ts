@@ -2,17 +2,35 @@ const BASE_URL = "https://api.fastfive.co.kr";
 const MEMBER_GROUP_ID = 9805;
 
 export const ROOM_IDS: Record<string, number> = {
+  "373160": 19484,
+  ada: 7721,
   alan: 7715,
+  charlie: 7725,
+  jan: 7716,
+  leedo: 7723,
+  marcel: 7720,
+  marie: 7722,
   miles: 7719,
+  newyork: 19008,
   nicola: 7717,
+  steve: 7727,
   fireside: 7724,
 };
 
 export const ROOMS = [
-  { id: "alan", name: "Alan", spaceId: 7715 },
-  { id: "miles", name: "Miles", spaceId: 7719 },
-  { id: "nicola", name: "Nicola", spaceId: 7717 },
-  { id: "fireside", name: "Fireside", spaceId: 7724 },
+  { id: "373160", name: "373160", spaceId: 19484, floor: 7, capacity: 8 },
+  { id: "ada", name: "Ada", spaceId: 7721, floor: 7, capacity: 8 },
+  { id: "alan", name: "Alan", spaceId: 7715, floor: 6, capacity: 8 },
+  { id: "charlie", name: "Charlie", spaceId: 7725, floor: 7, capacity: 8 },
+  { id: "jan", name: "Jan", spaceId: 7716, floor: 6, capacity: 8 },
+  { id: "leedo", name: "Lee Do", spaceId: 7723, floor: 7, capacity: 15 },
+  { id: "marcel", name: "Marcel", spaceId: 7720, floor: 6, capacity: 8 },
+  { id: "marie", name: "Marie", spaceId: 7722, floor: 7, capacity: 8 },
+  { id: "miles", name: "Miles", spaceId: 7719, floor: 6, capacity: 8 },
+  { id: "newyork", name: "NewYork", spaceId: 19008, floor: 7, capacity: 8 },
+  { id: "nicola", name: "Nicola", spaceId: 7717, floor: 6, capacity: 15 },
+  { id: "steve", name: "Steve", spaceId: 7727, floor: 7, capacity: 8 },
+  { id: "fireside", name: "The Fireside", spaceId: 7724, floor: 7, capacity: 25 },
 ];
 
 interface LoginResponse {

@@ -194,6 +194,21 @@ body {
   flex-wrap: wrap;
 }
 
+.room-group {
+  margin-bottom: 12px;
+}
+
+.room-group:last-child {
+  margin-bottom: 0;
+}
+
+.room-group-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 6px;
+}
+
 .weekday-btn,
 .room-btn,
 .freq-btn {

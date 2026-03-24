@@ -126,16 +126,33 @@ export function ReservationForm({
 
       <div className="form-section">
         <h4>회의실</h4>
-        <div className="room-buttons">
-          {ROOMS.map((room) => (
-            <button
-              key={room.id}
-              className={`room-btn ${form.room === room.id ? "selected" : ""}`}
-              onClick={() => onFormChange({ room: room.id })}
-            >
-              {room.name}
-            </button>
-          ))}
+        <div className="room-group">
+          <label className="room-group-label">6층</label>
+          <div className="room-buttons">
+            {ROOMS.filter((r) => r.floor === 6).map((room) => (
+              <button
+                key={room.id}
+                className={`room-btn ${form.room === room.id ? "selected" : ""}`}
+                onClick={() => onFormChange({ room: room.id })}
+              >
+                {room.name}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="room-group">
+          <label className="room-group-label">7층</label>
+          <div className="room-buttons">
+            {ROOMS.filter((r) => r.floor === 7).map((room) => (
+              <button
+                key={room.id}
+                className={`room-btn ${form.room === room.id ? "selected" : ""}`}
+                onClick={() => onFormChange({ room: room.id })}
+              >
+                {room.name}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
