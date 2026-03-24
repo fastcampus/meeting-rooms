@@ -24,8 +24,8 @@ app.use(
 // 정적 파일 서빙
 app.use(express.static(path.join(__dirname, "dist")));
 
-// SPA 라우팅
-app.get("*", (req, res) => {
+// SPA 라우팅 (Express 5 문법)
+app.get("/{*splat}", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
