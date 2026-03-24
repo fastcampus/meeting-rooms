@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.fastfive.co.kr";
+const BASE_URL = "/api";
 const MEMBER_GROUP_ID = 9805;
 
 export const ROOM_IDS: Record<string, number> = {
@@ -52,8 +52,6 @@ class FastFiveAPI {
         "Content-Type": "application/json",
         accept: "application/json",
         "mode-type": "group",
-        origin: "https://members.fastfive.co.kr",
-        referer: "https://members.fastfive.co.kr/",
         "x-application": "web",
       },
       credentials: "include",
@@ -78,8 +76,6 @@ class FastFiveAPI {
         "Content-Type": "application/json",
         accept: "application/json",
         "mode-type": "group",
-        origin: "https://members.fastfive.co.kr",
-        referer: "https://members.fastfive.co.kr/",
         "x-application": "web",
       },
       credentials: "include",
